@@ -39,7 +39,7 @@
         <button id="copyBtn" class="secondary">نسخ كود الغرفة</button>
       </div>
       <div id="status" class="status">غير متصل</div>
-      <div class="warn">لتفعيل المزامنة بين جهازين مختلفين، ضع إعدادات Firebase داخل <code>firebaseConfig</code> وفعّل Realtime Database.</div>
+      <div class="warn">المزامنة اللحظية مفعلة عبر Firebase. استخدم نفس كود الغرفة على الجهازين.</div>
     </div>
 
     <div class="card">
@@ -65,13 +65,13 @@
     import { getDatabase, ref, onValue, set, update, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
 
     const firebaseConfig = {
-      apiKey: "REPLACE_ME",
-      authDomain: "REPLACE_ME",
-      databaseURL: "REPLACE_ME",
-      projectId: "REPLACE_ME",
-      storageBucket: "REPLACE_ME",
-      messagingSenderId: "REPLACE_ME",
-      appId: "REPLACE_ME"
+      apiKey: "AIzaSyBU6TCL7rdc4OQaSkGl1Gbn9tVcLMxc_rM",
+      authDomain: "calculator-collab.firebaseapp.com",
+      databaseURL: "https://calculator-collab-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "calculator-collab",
+      storageBucket: "calculator-collab.firebasestorage.app",
+      messagingSenderId: "214404841924",
+      appId: "1:214404841924:web:f364f044e5db18eca32491"
     };
 
     const roomIdEl = document.getElementById("roomId");
